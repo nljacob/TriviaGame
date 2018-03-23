@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lion King Trivia Game</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Rammetto+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
+</head>
+
+<body>
+    
+<!-- BEGIN GAME/////////////////////////////////////////////////////////////////////////////////////////////////////////////////    -->
+    
+    <div class="row begin-game">
+    
+        <div class="container">
+        
+            <div class="row">
+                <h1>LION KING TRIVIA</h1>
+            </div>
+
+            <div class="row">
+            
+                <div class="col-md-7">
+                    <button id="begin">BEGIN</button>
+                </div>
+                
+                <div class="col-md-5">
+                    <img src="assets/images/simba.png" id="smallsimba">
+                </div>
+            
+            </div>
+        
+        </div>         
+    
+    </div>
+
+<!-- QUESTIONS///////////////////////////////////////////////////////////////////////////////////////////////////// -->        
+
+    <div class="questions">
+
+        <div class="container">
+
+            <div class="row">
+                <h1>LION KING TRIVIA</h1>
+            </div>
+
+            <div class="row" id="timer">
+                <h3>TIMER</h3>
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-7">
+                   
+                    <form id="form">
+
+                        <div class="formquestion1">
+                            <h4>1. What is Simba's dad's name?</h4>
+                            <label class="answers">
+                                <input type="radio" name="question1" value="Pumba">Pumba</label>
+                            <label class="answers">
+                                <input type="radio" name="question1" value="Scar">Scar</label>
+                            <label class="answers">
+                                <input type="radio" name="question1" value="Mufasa">Mufasa</label>
+                            <label class="answers">
+                                <input type="radio" name="question1" value="Rafiki">Rafiki</label>
+                        </div>
+
+                        <div class="formquestion2">
+                            <h4>2. Where does Simba's family live?</h4>
+                            <label class="answers">
+                                <input type="radio" name="question2" value="Perfect Rock">Perfect Rock</label>
+                            <label class="answers">
+                                <input type="radio" name="question2" value="Fun Rock">Fun Rock</label>
+                            <label class="answers">
+                                <input type="radio" name="question2" value="Crazy Rock">Crazy Rock</label>
+                            <label class="answers">
+                                <input type="radio" name="question2" value="Pride Rock">Pride Rock</label>
+                        </div>
+
+                        <div class="formquestion3">
+                            <h4>3. Which of these is NOT the name of Scar's hyenas?</h4>
+                            <label class="answers">
+                                <input type="radio" name="question3" value="Shenzi">Shenzi</label>
+                            <label class="answers">
+                                <input type="radio" name="question3" value="Ed">Ed</label>
+                            <label class="answers">
+                                <input type="radio" name="question3" value="Fonzi">Fonzi</label>
+                            <label class="answers">
+                                <input type="radio" name="question3" value="Banzai">Banzai</label>
+                        </div>
+
+                        <div class="formquestion4">
+                            <h4>4. What is the name of Mufasa's chief assistant?</h4>
+                            <label class="answers">
+                                <input type="radio" name="question4" value="Iago">Iago</label>
+                            <label class="answers">
+                                <input type="radio" name="question4" value="Banzai">Banzai</label>
+                            <label class="answers">
+                                <input type="radio" name="question4" value="Shenzi">Shenzi</label>
+                            <label class="answers">
+                                <input type="radio" name="question4" value="Zazu">Zazu</label>
+                        </div>
+
+                        <div class="formquestion5">
+                            <h4>5. What is the name of Mufasa's brother?</h4>
+                            <label class="answers">
+                                <input type="radio" name="question5" value="Zazu">Zazu</label>
+                            <label class="answers">
+                                <input type="radio" name="question5" value="Scar">Scar</label>
+                            <label class="answers">
+                                <input type="radio" name="question5" value="Iago">Iago</label>
+                            <label class="answers">
+                                <input type="radio" name="question5" value="Simba">Simba</label>
+                        </div>
+
+                        <div class="formquestion6">
+                            <h4>6. What does "Hakuna Matata" mean?</h4>
+                            <label class="answers">
+                                <input type="radio" name="question6" value="No Problem">No Problem</label>
+                            <label class="answers">
+                                <input type="radio" name="question6" value="It's All Good">It's All Good</label>
+                            <label class="answers">
+                                <input type="radio" name="question6" value="No Worries">No Worries</label>
+                            <label class="answers">
+                                <input type="radio" name="question6" value="Just Relax">Just Relax</label>
+                        </div>
+
+                        <div class="formquestion7">
+                            <h4>7. What is the name of Simba's mom?</h4>
+                            <label class="answers">
+                                <input type="radio" name="question7" value="Nala">Nala</label>
+                            <label class="answers">
+                                <input type="radio" name="question7" value="Sarabi">Sarabi</label>
+                            <label class="answers">
+                                <input type="radio" name="question7" value="Sarafina">Sarafina</label>
+                            <label class="answers">
+                                <input type="radio" name="question7" value="Rafiki">Rafiki</label>
+                        </div>
+
+                        <div class="formquestion8">
+                            <h4>8. What type of animal is Timon?</h4>
+                            <label class="answers">
+                                <input type="radio" name="question8" value="Gerbil">Gerbil</label>
+                            <label class="answers">
+                                <input type="radio" name="question8" value="Hyena">Hyena</label>
+                            <label class="answers">
+                                <input type="radio" name="question8" value="Meerkat">Meerkat</label>
+                            <label class="answers">
+                                <input type="radio" name="question8" value="Rat">Rat</label>
+                        </div>
+
+                    </form>
+            
+                </div>
+
+                <div class="col-md-5">
+                    <img src="assets/images/simba.png" alt="">
+                </div>
+
+            </div>
+        
+            <div class="row">
+                <button id="submit">SUBMIT</button>
+            </div>
+                   
+        </div>
+
+    </div>
+
+<!-- END GAME//////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    
+    <div class="end-game">
+    
+        <div class="container">
+                   
+            <div class="row">
+                <h1>GAME OVER!</h1>
+            </div>
+
+            <div class="row" id="scoretable">
+                <table>
+                    <tr>
+                        <td class="score">CORRECT:</td>
+                        <td id="correct"></td>
+                    </tr>
+                    <tr>
+                        <td class="score">INCORRECT:</td>
+                        <td id="incorrect"></td>
+                    </tr>
+                    <tr>
+                        <td class="score">UNANSWERED:</td>
+                        <td id="unanswered"></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="row" id="playagain">
+                <button>PLAY AGAIN</button>
+            </div>
+
+        </div>
+
+    </div>
+
+
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <script src="assets/javascript/app.js"></script>
+
+</body>
+
+</html>
